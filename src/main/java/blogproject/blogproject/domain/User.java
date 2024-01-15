@@ -30,7 +30,7 @@ public class User implements UserDetails { // UserDetails를 상속받아 인증
     private String password;
 
     @Builder
-    public User(String email, String password, String auth) {
+       public User(String email, String password, String auth) {
         this.email = email;
         this.password = password;
     }

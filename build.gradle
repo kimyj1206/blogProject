@@ -18,12 +18,16 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' // 타임리프
     implementation 'org.springframework.boot:spring-boot-starter-security' // 스프링 시큐리티
     implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6' // 타임리프에서 스프링 시큐리티 사용
+    implementation 'io.jsonwebtoken:jjwt:0.9.1' // 자바 jwt 라이브러리
+    implementation 'javax.xml.bind:jaxb-api:2.3.1' // xml 문서와 java 객체 간 매핑 자동화
 
     runtimeOnly 'com.h2database:h2' // 인메모리 데이터베이스
 
     compileOnly 'org.projectlombok:lombok' // 롬복
     annotationProcessor 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
 
+    testImplementation 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test' // 스프링 시큐리티 테스트
 }
